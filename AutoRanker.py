@@ -1,17 +1,38 @@
 import pyautogui
 import time
 
-RankButton = "C:\\Users\\shree\\OneDrive\\Desktop\\Python\\Projects\\PAL Autoranker\\RankButton.png"
-VeryIntButton = "C:\\Users\\shree\\OneDrive\\Desktop\\Python\\Projects\\PAL Autoranker\\VeryInterestedButton.png"
-SaveButton = "C:\\Users\\shree\\OneDrive\\Desktop\\Python\\Projects\\PAL Autoranker\\SaveButton.png"
+while True:
+    RankButton = "C:\\Users\\shree\\OneDrive\\Desktop\\Python\\Projects\\PAL Autoranker\\RankButton.png"
+    VeryIntButton = "C:\\Users\\shree\\OneDrive\\Desktop\\Python\\Projects\\PAL Autoranker\\VeryInterestedButton.png"
+    SaveButton = "C:\\Users\\shree\\OneDrive\\Desktop\\Python\\Projects\\PAL Autoranker\\SaveButton.png"
 
-time.sleep(1)
-pyautogui.click(RankButton)
+    time.sleep(3)
+    while True:
+        try:
+            pyautogui.press("end")
+            pyautogui.click(RankButton)
+            break
+        except:
+            continue
+    time.sleep(3)
+    while True:
+        try:
+            pyautogui.press("end")
+            break
+        except:
+            continue
+    while True:
+        try:
+            pyautogui.click(VeryIntButton)
+            break
+        except:
+            continue
+    while True:
+        try:
+            pyautogui.click(SaveButton)
+            break
+        except:
+            continue
 
-time.sleep(3)
-pyautogui.press("end")
-
-pyautogui.click(VeryIntButton)
-pyautogui.click(SaveButton)
-
-pyautogui.press("end")
+    time.sleep(1)
+    pyautogui.press("end")
